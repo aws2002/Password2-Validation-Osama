@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+body {
+    margin: 0;
+    background: url(../images/MEMPHIS_BACKGROUND_Mesa_de_trabajo_1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+.clear {
+    clear: both;
+}
+.item-form{
+    margin-top: 40%;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-shadow:  -9px -9px 40px #e00948,
+                9px 9px 40px #ff0b5c;
+}
+.sec-titel h2{
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.item-form input{
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #fe0a52;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 25px;
+}
+.item-form input:focus{
+    background: none;
+    border: 2px solid #fe0a52;
+    color: #fff;
+}
+.item-form form{
+    position: relative;
+}
+.item-form input::placeholder{
+    color: rgba(255, 255, 255, 0.637);
+}
+.item-form i{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.637);
+}
+.indicator{
+    display: flex;
+    height: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    display: none;
+}
+.indicator span{
+    display: block;
+    width: 120px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.637);
+}
+/* .indicator span.medium{
+    margin-left: 3px;
+    margin-right: 3px;
+} */
+.indicator span:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.active.weak:before{
+    background-color: #ff4757;
+}
+.indicator span.active.medium:before{
+    background-color: orange;
+}
+.indicator span.active.strong:before{
+    background-color: #23ad5c;
+}
+.text p{
+    margin: 15px 0 0 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: none;
+}
+.far{
+    display:none;
+}
